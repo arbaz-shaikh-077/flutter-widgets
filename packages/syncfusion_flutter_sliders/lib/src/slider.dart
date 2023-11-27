@@ -1234,7 +1234,7 @@ class _SfSliderState extends State<SfSlider> with TickerProviderStateMixin {
   late AnimationController stateController;
   late AnimationController tooltipAnimationController;
   Timer? tooltipDelayTimer;
-  final Duration duration = const Duration(milliseconds: 100);
+  final Duration duration = Duration.zero;
 
   void _onChanged(dynamic value) {
     if (value != widget.value) {
